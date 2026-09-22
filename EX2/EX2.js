@@ -20,7 +20,7 @@ function startBorrowing() {
     let fiction = prompt("Are you prefers a fiction or non-fiction book genre : ")
     let book = prompt("write the specific title of the book you wants to borrow : ")
     alert("The " + book + " book is being reserved")
-    const student = [name, type, title, fiction, book]
+    const student = [name, type, fiction, book]
     console.log(student)
 }
 

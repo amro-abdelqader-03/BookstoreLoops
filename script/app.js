@@ -21,7 +21,27 @@ function startBorrowing() {
     let book = prompt("write the specific title of the book you wants to borrow : ")
     alert("The " + book + " book is being reserved")
     const student = [name, type, fiction, book]
-    console.log(student)
+    console.log(student);
+    return student
 }
 
-startBorrowing()
+function applyDiscount(userData) {
+    let type = userData[1]
+    if(type == "student")
+        userData.push("20% Discount")
+    else if(type == "regular")
+        userData.push("No Discount")
+
+    return userData
+
+}
+
+const availableGenres = ["Fiction", "Science", "History", "Biography"]
+
+function addNewGenre(genre){
+    availableGenres.push(genre)
+}
+
+// addNewGenre("quantum physics")
+// console.log(availableGenres)
+// applyDiscount(startBorrowing())

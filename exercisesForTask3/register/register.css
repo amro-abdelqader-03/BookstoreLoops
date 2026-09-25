@@ -24,8 +24,13 @@
     width: 100%;
     padding: 10px;
     margin-top: 20px;
-    background-color: #163498;
+    background-color: #166498;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.register-form :disabled{
+    background-color: #0d1013;
+    cursor: not-allowed;
 }

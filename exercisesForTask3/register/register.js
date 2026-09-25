@@ -4,40 +4,45 @@ const confirm_pass_input = document.querySelector("#confirm-password")
 const register_btn = document.querySelector("button")
 const anyname = document.querySelectorAll("p")
 
-
-function required_input_check(username_value, password_value, confirm_pass_value){
-    let is_all_filled = 1;
-
-    if(username_value === ""){
-        anyname[0].innerText="Required";
-        is_all_filled = 0;
+username_input.addEventListener("input", function (event) {
+    let username_value = username_input.value;
+    if (username_value.length > 0) {
+        anyname[0].innerHTML = "";
     }
+    else
+        anyname[0].innerHTML = "Required"
+});
 
-    if(password_value === ""){
-        anyname[1].innerText="Required";
-        is_all_filled = 0;
-    }
+password_input.addEventListener("input", function (event) {
+    let password_value = password_input.value;
+    if (password_value.length > 0)
+        anyname[1].innerHTML = "";
+    else
+        anyname[1].innerHTML = "Required"
+});
 
-    if(confirm_pass_value === ""){
-        anyname[2].innerText="Required";
-        is_all_filled = 0;
+confirm_pass_input.addEventListener("input", function (event) {
+    let confirm_pass_value = confirm_pass_input.value;
+    if (confirm_pass_value.length > 0) {
+        let password_value = password_input.value;
+        if (password_value !== confirm_pass_value) {
+            anyname[2].innerHTML = "the passwords must be same";
+        }
+        else {
+            anyname[2].innerHTML = "";
+            let username_value = username_input.value;
+            if (username_value.length > 0) {
+                register_btn.disabled=false;
+                console.log("hi")
+            }
+        }
     }
-    return is_all_filled;
-    
-}
+    else
+        anyname[2].innerHTML = "Required"
+});
 
 register_btn.addEventListener("click", (event) => {
     event.preventDefault();
-    const username_value = username_input.value;
-    const password_value = password_input.value;
-    const confirm_pass_value = confirm_pass_input.value;
-    username_input.value = "";
-    password_input.value = "";
-    confirm_pass_input.value = "";
-
-    let is_all_filled = required_input_check(username_value, password_value, confirm_pass_value)
-    if(!is_all_filled)
-        return;
-    
+    anyname[3].innerHTML = "successful user registration";
 })
 

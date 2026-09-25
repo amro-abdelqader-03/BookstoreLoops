@@ -4,9 +4,6 @@ function startBorrowing() {
     let type = prompt("Enter your membership type (student/regular) : ");
     let title;
 
-    while (type != "student" && type != "regular"){
-        type = prompt("incorrect membership type, please try again (student/regular) : ")
-    }
     if (type === "student")
         title = "Scholar";
     else if (type === "regular")
@@ -19,9 +16,6 @@ function startBorrowing() {
 
     let fiction = prompt("Are you prefers a fiction or non-fiction book genre : ")
     let book = prompt("write the specific title of the book you wants to borrow : ")
-    alert("The " + book + " book is being reserved")
-    const student = [name, type, fiction, book]
-    console.log(student)
+    alert("The " + borrow + " book is being reserved")
+    console.log("user : " + name + " order : " + book + " book / fiction : " + fiction)
 }
-
-startBorrowing()

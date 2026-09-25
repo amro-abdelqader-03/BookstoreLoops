@@ -1,0 +1,165 @@
+
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f8f6f0;
+    color: #20352c;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #173b2e;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    color: #e7c98b;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: white;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #e7c98b;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #173b2e,
+        #315b45
+    );
+    color: white;
+    padding: 110px 20px;
+}
+
+.subtitle {
+    color: #e7c98b;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #e7c98b;
+}
+
+.hero-text {
+    color: #e0e8e2;
+    max-width: 550px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+/* Buttons */
+.btn-custom {
+    background-color: #e7c98b;
+    color: #173b2e;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #d6b56e;
+    color: #173b2e;
+    transform: translateY(-3px);
+}
+
+/* About */
+#about h2,
+.books-section h2,
+.borrow-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+    color: #66756b;
+}
+
+/* Books */
+.books-section {
+    background-color: #eeeee5;
+}
+
+.book-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    height: 100%;
+    box-shadow: 0 5px 20px #173b2e12;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #173b2e25;
+}
+
+.book-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.book-card h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.book-card p {
+    color: #66756b;
+    line-height: 1.7;
+}
+
+/* Borrow */
+.borrow-section {
+    background-color: #fff;
+}
+
+.borrow-section p {
+    color: #66756b;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #173b2e;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .hero {
+        padding: 80px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .nav-link {
+        margin-left: 8px;
+        font-size: 14px;
+    }
+}

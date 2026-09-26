@@ -1,5 +1,7 @@
-var paragText = document.getElementById("paragText");
-var paragContent = paragText.textContent;
+// part 1
+
+let paragText = document.getElementById("paragText");
+let paragContent = paragText.textContent;
 const paragWords = paragContent.split(" ")
 for (let i = 0; i < paragWords.length; i++){
     if (paragWords[i].length > 8){
@@ -8,3 +10,8 @@ for (let i = 0; i < paragWords.length; i++){
         paragText.innerHTML = innerHTML;
     }
 }
+
+// part 2
+
+const src_link_div = document.getElementById("src-link")
+src_link_div.innerHTML = "<a href='https://google.com/' target='_blank'>source</a>"

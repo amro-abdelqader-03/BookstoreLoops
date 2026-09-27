@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Text Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Interactive Text Editor</h1>
+
+    <!-- Text Display -->
+    <div class="text-display">
+        hello
+    </div>
+
+    <!-- Controls -->
+    <div class="editor-controls">
+
+        <!-- First Row -->
+        <div class="button-row">
+            <button onclick="addBold()">Bold</button>
+            <button onclick="addItalic()"><i>Italic</i></button>
+            <button onclick="leftText()">Left</button>
+            <button onclick="centerText()">Center</button>
+            <button onclick="rightText()">Right</button>
+        </div>
+
+        <!-- Second Row -->
+        <div class="button-row">
+            <button onclick="upperText()">Upper Case</button>
+            <button onclick="lowerText()">Lower Case</button>
+            <button onclick="capitalText()">Capitalize</button>
+            <button>Clear Text</button>
+        </div>
+
+        <!-- Colors -->
+        <div class="control-row">
+            <label>Text Color:</label>
+            <input type="color" value="#990000" id="textColor">
+
+            <label>Background:</label>
+            <input type="color" value="#00eeee" id="backColor">
+        </div>
+
+        <!-- Font -->
+        <div class="control-row">
+            <label for="fontSize">Font Size:</label>
+            <input type="number" id="fontSize" value="47">
+
+            <label for="font">Font:</label>
+            <select id="font">
+                <option>Georgia</option>
+                <option>Arial</option>
+                <option>Times New Roman</option>
+                <option>Verdana</option>
+            </select>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

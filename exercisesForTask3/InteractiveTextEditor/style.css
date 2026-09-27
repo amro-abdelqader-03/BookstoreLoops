@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* Text display area */
+.text-display {
+    width: 455px;
+    height: 91px;
+    margin: 0 auto 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #00eeee;
+    border: 1px solid #333;
+    border-radius: 4px;
+
+    color: #990000;
+    font-family: Georgia, serif;
+    font-size: 34px;
+}
+
+
+/* Controls container */
+.editor-controls {
+    width: 455px;
+    margin: 0 auto;
+
+    padding: 15px 19px;
+
+    background-color: white;
+    border: 1px solid #d5d5d5;
+    border-radius: 6px;
+}
+
+/* Button rows */
+.button-row {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 11px;
+}
+
+button {
+    background-color: #49488b;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 6px 11px;
+
+    font-size: 11px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #383773;
+}
+
+/* Control rows */
+.control-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Color inputs */
+input[type="color"] {
+    width: 34px;
+    height: 21px;
+
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border: 1px solid #ccc;
+}
+
+/* Font size input */
+input[type="number"] {
+    width: 64px;
+    height: 23px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 7px;
+
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+/* Font select */
+select {
+    width: 112px;
+    height: 24px;
+
+    margin-left: 10px;
+
+    border: 1px solid #aaa;
+    border-radius: 4px;
+
+    padding-left: 7px;
+    background-color: white;
+}

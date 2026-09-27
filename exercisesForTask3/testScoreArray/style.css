@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 500px;
+    min-height: 600px;
+    border: 3px solid blue;
+    padding: 20px 40px;
+    margin: auto;
+}
+
+/* Main title */
+
+h1 {
+    color: blue;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Form */
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-row label {
+    width: 55px;
+    font-size: 14px;
+}
+
+.form-row input {
+    width: 150px;
+    height: 22px;
+    border: 1px solid #aaa;
+}
+
+/* Buttons */
+
+.buttons {
+    margin-top: 10px;
+    margin-left: 55px;
+}
+
+button {
+    font-size: 12px;
+    margin-right: 8px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+/* Section titles */
+
+h2 {
+    color: blue;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Results */
+
+#results p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    width: 220px;
+    font-size: 14px;
+}
+
+th {
+    text-align: left;
+    padding-bottom: 4px;
+}
+
+td {
+    padding: 2px 0;
+}
+
+th:first-child,
+td:first-child {
+    width: 130px;
+}
+
+th:last-child,
+td:last-child {
+    width: 70px;
+}
